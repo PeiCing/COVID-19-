@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>COVID-19疫情網</title>
+<meta charset="utf-8">
+<style type="text/css">* {cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1565.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2020/12/01/among-us-yellow-crewmate.html" target="_blank" title="Among Us - Yellow Crewmate"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Among Us - Yellow Crewmate" style="position:absolute; top: 0px; right: 0px;" /></a>		
+<style>
+
+/*背景圖片*/	
+	body{
+	background-image: url('背景.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	}
+	
+/*全版面*/	
+	#all{
+	width:1300px;
+	margin:100px auto;
+	}
+	
+/*上標題*/	
+	#header{
+	height: 740px;
+	background-color:white;
+	background-size:1000px 300px;
+	background-repeat: no-repeat;
+	background-size:top;
+	}
+	
+	/*標題LOGO*/
+	#myhead{
+	margin:0px;
+	}
+	
+	/*幻燈片*/
+	.outside{
+	position: relative;
+	height: 400px;
+	width:800px;
+	margin:150px 230px 100px 260px;
+	}
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;}
+	
+	.mySlides {display:none}
+	/* 幻燈片容器 */
+	.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	}
+
+	/* 下一張 & 上一張 按鈕 */
+	.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	}
+
+	/* 定位 "下一張" 按鈕靠右 */
+	.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	}
+
+	/* 標題文本 */
+	.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	}
+
+	/* 數字文本(1/3 等) */
+	.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	}
+
+	/* 標記符號 */
+	.dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	background-color: #717171;
+	}
+
+	/* 淡出動畫 */
+	.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+	}	
+
+	@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+	}
+    
+/*導覽鍵*/	
+	#menu{
+	background-color: white;
+	}
+	#menu ul{
+	padding: 0;
+	}
+	#menu ul:after{
+	content: "";
+	display: block;
+	clear: both;
+	}
+	#menu li{
+	float: left;
+	background-size: contain;
+	list-style-type: none;
+	font-size: 4px;
+	width: 250px;
+	margin:3px;
+	}
+	#menu li a{
+	display: block;
+	text-align: center;
+	color: black;
+	background-color:white;
+	margin:1px 0px 0px 3px;
+	border: 1px black solid;
+	text-decoration-line: none;
+	}
+	#menu li a:hover{
+	background-size: contain;
+	color: white;
+	background-color:#0066CC;
+	}
+	/*滑鼠滑過變色*/
+	#nav{
+	background-color: white;
+	}
+	#nav :hover{
+	background-size: contain;
+	color: red;
+	}
+	/*下拉式選單*/
+         ul { 
+             
+             list-style:none;
+         }
+
+         ul.drop-down-menu {
+             display:inline-block;
+         }
+
+         ul.drop-down-menu li {
+             position:relative;
+             
+         }
+
+         ul.drop-down-menu > li:last-child {
+             border-right:none;
+         }
+
+
+
+         ul.drop-down-menu a {
+             background-color:#FDE3E6;
+             color:#333;
+             display:block;
+             padding:10px 16px;
+             text-decoration:none;
+             
+
+         }
+         ul.drop-down-menu a:hover {
+              background-color:#F08080;
+              color:#fff;
+         }
+         ul.drop-down-menu li:hover > a {
+              background-color:#F08080;
+              color:#fff;
+         }
+         ul.drop-down-menu ul {
+              display:none;
+              position:absolute;
+              z-index:999;
+              left:100%;
+              top:10px;
+              min-width:180px;
+         }
+
+         ul.drop-down-menu li:hover > ul {
+              display:block;
+         }
+         /*下拉式選單*/
+/*欄位*/
+	#wrapper{
+	float:left;
+	width:100%;
+	}	
+/*右欄位*/
+	#rightside{
+	float:left;
+	width:300px;
+	height:2800px;
+	margin-left:-300px;
+	background-color:white;
+	}
+	.whitediv{
+	float:left;
+	width:290px;
+	height:42.7px;
+	top:890px;
+	left:1140px;
+	background-color:white;
+	}
+	.bluediv{
+	float:left;
+	width:290px;
+	height:640px;
+    top:890px;
+    left:1140px;
+	background-color:#0066CC;
+	color:white;
+	margin-left:5px;
+	}
+/*左欄位*/	
+	#leftside{
+	float:left;
+	width:300px;
+	height:2800px;
+	margin-left:-100%;
+	background-color:white;
+	}
+	.button1{
+	display:inline-block;
+	padding: 10px 20px;
+	margin:5px;
+	font-size: 20px;
+	background-color:#0066CC;
+	color:white;
+	box-shadow: 0px 8px lightgray;
+	border: none;
+	border-radius: 10px;
+	}
+	.button1:hover{
+	background-color: #0080FF;
+	cursor: pointer;
+	}
+	.button1:active{
+	box-shadow: 0px 4px gray;
+	-ms-transform: translate(0,4px);
+	-webkit-transform: translate(0,4px);
+	transform: translate(0,4px);
+	}
+	
+	/*白底按鈕*/
+	.button2{
+	display:inline-block;
+	padding: 10px 20px;
+	margin:5px;
+	font-size: 20px;
+	background-color:white;
+	color:black;
+	box-shadow: 0px 8px lightgray;
+	border: none;
+	border-color: black;
+	border-radius: 10px;
+	}
+	.button2:hover{
+	background-color: #0080FF;
+	cursor: pointer;
+	}
+	.button2:active{
+	box-shadow: 0px 4px gray;
+	-ms-transform: translate(0,4px);
+	-webkit-transform: translate(0,4px);
+	transform: translate(0,4px);
+	}
+	
+/*主內容*/
+	#main{
+	height:2800px;
+	margin: 0 300px 0 300px;
+	background-color: white;
+	}
+	.lg5{
+	background: linear-gradient(to left, red, yellow, orange);
+	}
+	.bodyimg{
+	margin:10px 10px 10px 5px;
+	}
+	.NEW_SIGN{
+    height:1262px;
+    position:absolute;
+    top:20px;
+    left:40px;
+	}
+	.IMP_SIGN{
+    height:1262px;
+    position:absolute;
+    top:450px;
+    left:40px;
+	}
+	.date{
+	position:absolute;
+    left:520px;
+	}
+	#word1bg{
+	background-color:#0080ff;
+	color:white;
+	font-size: 30px;
+	}
+	#word2bg{
+	background-color:#c4f0ff;
+	color:black;
+	font-size: 25px;
+	}
+	#word3bg{
+	background-color:red;
+	color:white;
+	}
+/*連結顏色*/
+	a:link{
+	color:blue;
+	}
+	a:visited{
+	color:purple;
+	}
+/*下標題*/
+	#footer{
+	clear:both;
+	height: 100px;
+	text-align: center;
+	background-color:#84C1FF;
+	}	
+/*表格*/
+	table{
+	border: 3px blue solid;
+	border-collapse:collapse;
+	}
+	th, td{
+	border: 2px black dashed;
+	text-align: center;
+	padding: 5px;
+	}
+	tr:nth-child(even){
+	background-color: pink;
+	}
+	tr:hover{
+	background-color: aqua;
+	}
+
+</style>	
+</head>
+	
+	<div id="all" style="font-family:微軟正黑體;">
+		
+		<div id="header">
+		
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="location.href='COVID-19疫情網.html'">
+			<img src="首頁圖.png" height="30px"></img><font size="6"><b> 首頁</b></font></button>
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="location.href='地圖.html'">
+			<img src="地圖圖.png" height="30px"></img><font size="6"><b> 地圖</b></font></button>
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="window.open('https://covid-19.nchc.org.tw/dt_owl.php?dt_name=3','_blank')">
+			<img src="地球.png" height="30px"></img><font size="6"><b>&thinsp; 全球報表</b></font></button>
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="window.open('https://covid-19.nchc.org.tw/city_confirmed.php','_blank')">
+			<img src="台灣.png" height="30px"></img><font size="6"><b>&thinsp; 台灣報表</b></font></button>
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="window.open('https://1922.gov.tw/','_blank')">
+			<img src="疫苗.png" height="30px"></img><font size="6"><b>疫苗接種</b></font></button>
+			<button class="button1" style="position:relative; left:80px; top: 140px;" onclick="window.open('https://forms.gle/dVhT9ScSvSmFENBf6','_blank')">
+			<img src="信封.png" height="30px"></img><font size="6"><b>&thinsp; 回饋</b></font></button>
+
+
+
+			<div id="myhead"><img src="header.png" style="position:absolute;top:115px;left:80px;" width="367px" height="120px">
+			
+			<div style="float:right;width:70%;">
+				<marquee style="font-family:微軟正黑體;font-size:40px;text-align:center;line-height:70px;cursor: default;" scrollamount="15">!!!😃戴好口罩 勤洗手 隨身攜帶酒精 🌻讓世界感冒好起來 大家一起出去玩🌻!!!</marquee>
+			</div>
+			</div>
+			<div class="outside">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 4</div>
+					<img class="img" src="1.jpg" style="width:100%">
+					<div class="text">img 1</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 4</div>
+					<img class="img" src="2.png" style="width:100%">
+					<div class="text">img 2</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 4</div>
+					<img class="img" src="3.jpg" style="width:100%">
+					<div class="text">img 3</div>
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 4</div>
+					<img class="img" src="4.png" style="width:100%">
+					<div class="text">img 4</div>
+				</div>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span>
+			</div>
+			
+			</div>
+			<div style="height:15px;width:1300px;background-color:#FFCC00;margin:0px auto;"></div>
+			<script>
+			var slideIndex = 0;
+				showSlides();
+
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 2000); // 切换时间为 2 秒
+			}
+			</script>
+		</div>		
+		<div id="menu" style="font-family:微軟正黑體;">
+			<ul>
+				<div style="float:center;width:100%;">
+				</div>
+			</ul>
+		</div>
+		
+		<div id="wrapper">
+			<div id="main">
+			<body link="blue" vlink="purple" alink="red">	
+				
+				<div style="border-color:black;border-style:solid;border-width:2px;padding:250px;height:2600px;position:relative;left:0px;right:40px;top:42px;">
+					<div style="border-color:white;border-style:solid;border-width:2px;padding:340px;height:1400px;position:relative;left:-260px;right:40px;top:-250px;">		
+						<div class="NEW_SIGN"><img class="bodyimg" src="疫苗.png" height="50px"></img><font size="6"><b>AstraZeneca</b></font><br><br>
+					
+							<div style="font-family:微軟正黑體;font-size:20px">	
+								<div id="word1bg"><b>疫苗概述</b></div><br>
+								AstraZeneca之COVID-19疫苗是含有SARS-CoV-2病毒棘蛋白<br>(S protein)基因之非複製型腺病毒載體之疫苗，用於預防COVID-19。本疫苗已通過WHO、歐盟等其他先進國家及我國緊急授權使用。<br>
+						
+								<br>	
+								<div id="word2bg"><b>冷儲條件</b></div><br>
+								2 ~8°C 冷藏儲存。<br>
+								&emsp;	
+								<div id="word2bg"><b>接種劑量及間隔</b></div><br>
+								1. 目前依據疫苗仿單之適用接種年齡為<span style="background-color:#f8ff78">18歲以上</span>，接種劑量為0.5 mL。
+								2. 接種劑次為2劑，目前依世界衛生組織(WHO)建議接種間隔為<span style="background-color:#f8ff78">8至12<br>
+								&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;週</span>；依我國衛生福利部傳染病防治諮詢會預防接種組(ACIP)建議為至少<br>
+								&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;8週以上。<br>
+								3. 接種途徑為肌肉注射。<br>
+								&emsp;
+								<div id="word2bg"><b>安全性及保護效果</b></div><br>
+
+								1. 本疫苗不含可複製之SARS-CoV-2病毒顆粒，不會因為接種本疫苗而罹<br>
+								&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;患COVID-19。<br>
+								<span style="background-color:#f8ff78">2. 完成2劑接種可預防63%有症狀感染之風險</span>，另依臨床試驗資料分析，<span style="background-color:#f8ff78"><br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;當接種間隔12週且完成2劑接種，保護力約81% (60% ~ 91%)</span>。基此<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;我國衛生福利部傳染病防治諮詢會預防接種組（ACIP）<span style="background-color:#f8ff78">建議兩劑間隔<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;至少8 週，而間隔10-12 週，疫苗接種效果更佳。</span><br>
+								&emsp;
+								<div id="word2bg"><b>接種禁忌</b></div><br>
+								對於疫苗成分有嚴重過敏反應史、先前接種本項疫苗劑次曾發生嚴重過敏反應或血栓合併血小板低下症候群者，以及過去曾發生微血管滲漏症候群(Capillary leak syndrome, CLS)之病人，不予接種。<br>
+								&emsp;
+								<div id="word2bg"><b>接種注意事項</b></div><br>
+								1. 發燒或正患有急性中重度疾病者，宜待病情穩定後再接種。<br>
+								2. AstraZeneca COVID-19疫苗與注射後非常罕見的血栓併血小板症候群<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;可能有關聯，接種前請與醫師討論評估相關風險後再接種。<br>
+								3. 過去曾發生血栓合併血小板低下症候群，或肝素引起之血小板低下症<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;者，應避免接種。<br>
+								<span style="background-color:#f8ff78">4. 本疫苗不得與其他廠牌交替使用。若不慎使用了兩劑不同COVID-19疫<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;苗產品時，不建議再接種任何一種產品。</span><br>
+								<span style="background-color:#f8ff78">5. 目前尚無資料顯示與其他疫苗同時接種對免疫原性與安全性的影響。</span><span style="background-color:#f8ff78"><br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;COVID-19疫苗與其他疫苗的接種間隔，建議間隔至少7天。</span>如小於上<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;述間隔，則各該疫苗亦無需再補種。<br>
+								6. 免疫功能低下者，包括接受免疫抑制劑治療的人，對疫苗的免疫反應<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;可能減弱。(尚無免疫低下者或正在接受免疫抑制治療者的數據)<br>
+								7. 目前缺乏孕婦接種COVID-19 疫苗之臨床試驗及安全性資料，而臨床<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;觀察性研究顯示孕婦感染SARS-CoV-2 病毒可能較一般人容易併發重<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;症。孕婦若為COVID-19 之高職業暴露風險者或具慢性疾病而易導致<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;重症者，可與醫師討論接種疫苗之效益與風險後，評估是否接種。<br>
+								8. 若哺乳中的婦女為建議接種之風險對象(如醫事人員)，應完成接種。目<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;前對哺乳中的婦女接種COVID-19疫苗的安全性、疫苗對母乳或受哺嬰<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;兒之影響尚未完全得到評估，但一般認為並不會造成相關風險。接種<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;COVID-19疫苗後，仍可持續哺乳。<br>
+								&emsp;
+								<div id="word2bg"><b>接種後注意事項</b></div><br>
+								1. 為即時處理接種後發生率極低的立即型嚴重過敏反應，接種後應於接<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;種單位或附近稍作<span style="background-color:#f8ff78">休息留觀15分鐘</span>，離開後請自我密切觀察15分鐘，<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;但針對先前曾因接種疫苗或任何注射治療後發生急性過敏反應之民<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;眾，接種後仍請於接種處或<span style="background-color:#f8ff78">附近留觀至少30分鐘</span>。<br>
+								2. 使用抗血小板或抗凝血藥物或凝血功能異常者施打後於注射部位加壓<br>&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;至少2分鐘，並觀察是否仍有出血或血腫情形。<br>
+								&emsp;
+								<div id="word2bg"><b>接種後可能發生之反應及因應措施</b></div><br>
+								
+									<div style='background-color:white;'>
+	
+									<article>
+										<table align="center" width="98%" border="10" border-color="black">
+											<tr>
+												<th>常見副作用</th>
+												<th>頻率</th>
+											</tr>
+										
+											<tr>
+												<td>注射部位疼痛</td>
+												<td>54.2%</td>
+												
+											</tr>
+											<tr>
+												<td>疲倦</td>
+												<td>53.1%</td>
+												
+											</tr>
+											<tr>
+												<td>頭痛</td>
+												<td>52.6%</td>
+												
+											</tr>
+											<tr>
+												<td>肌肉痛</td>
+												<td>44.0%</td>
+												
+											</tr>
+											<tr>
+												<td>畏寒</td>
+												<td>31.9%</td>
+											</tr>
+											<tr>
+												<td>關節痛</td>
+												<td>26.4%</td>
+											</tr>
+											<tr>
+												<td>發燒(>38度)</td>
+												<td>7.9%</td>
+											</tr>
+										</table>
+									</article>
+								</div>
+					
+								&emsp;		
+							</div>
+						</div>
+					</div>
+				</div>
+			</body>
+			</div>
+		</div>
+		
+		<div id="leftside">
+			<ul>
+				<div id="menu" style="font-family:微軟正黑體;">
+					&emsp;<br>  
+					<li><a href="病毒介紹.html"><b><h1><font size="5">病毒介紹</font></h1></b></a></li>
+					<ul class="drop-down-menu">
+					<li>
+						<a href="疫苗簡介.html"><b><h1><font size="5">疫苗簡介</font></h1></b></a>
+						<ul>
+							<li>
+								<a href="AZ.html"><b><h1><font size="5">AZ</font></h1></b></a>
+							</li>
+							<li>
+								<a href="BioNTech.html"><b><h1><font size="5">BioNTech</font></h1></b></a>
+							</li>	
+							<li>
+								<a href="Moderna.html"><b><h1><font size="5">Moderna</font></h1></b></a>
+							</li>		
+							<li>
+								<a href="高端.html"><b><h1><font size="5">高端</font></h1></b></a>
+							</li>
+						</ul>
+					</li>
+					
+					
+					<li><a href="公費疫苗接種對象.html"><b><h1><font size="5">公費疫苗接種對象</font></h1></b></a></li>
+					<li><a href="COVID-19疫苗接種院所.html"><b><h1><font size="5">COVID-19<br>疫苗接種院所</font></h1></b></a></li>
+					<li><a href="https://www.cdc.gov.tw/Category/QAPage/JCyOJznV52tt35_bDBeHfA" target="blank"><b><h1><font size="5">接種期程<br>與注意事項</font></h1></b></a></li>
+			</div>
+			</ul>
+			
+		</div>
+		
+		<div id="rightside" style="font-family:微軟正黑體;">
+			<div class="whitediv"></div>
+			<div class="bluediv"><br>&emsp;&emsp;<img  src="YT.png" height="50px" style="position:relative;right:20px;">
+				<img src="9.PNG" style="position:relative;right:20px;bottom:2px;"></img><br>
+				<center><iframe width="250" height="200" src="https://www.youtube.com/embed/T5KBtP198Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+				<b><h1><font size="6">&ensp;相關資訊</font></h1></b>
+				<center><img src="預約.PNG" height="45px" onclick="location.href='https://1922.gov.tw/'"><br>
+				<img src="衛生福利部疾病管制署.png" height="48px" onclick="location.href='https://www.cdc.gov.tw/'"><br>
+				<img src="衛生福利部.jpg" height="100px" onclick="location.href='https://www.mohw.gov.tw/mp-1.html'">
+			</div>
+			<a href="#" class="back-to-top"><img src="10.PNG" style="position:relative;top:1700px;left:190px;"</a>
+		</div>
+		
+		<div id="footer">
+		<br>
+			<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1101ITWWW%2F11011139&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="300" height="45" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			<div class="container">
+				<span style="color:black;position:relative;top: -20px;"><font size="2"><b>Gmail:11011239@gm.nttu.edu.tw</b></font></span><br>
+				<span style="color:black;position:relative;top: -20px;"><font size="2"><b>Gmail:10711270@gm.nttu.edu.tw</b></font></span>
+		
+			</div>
+		</div>
+</html>
